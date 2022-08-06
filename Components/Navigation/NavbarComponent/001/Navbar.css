@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 10vh;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.048);
+  font-family: "Mulish", sans-serif;
+  -webkit-box-shadow: 0px 0px 21px -8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 21px -8px rgba(0, 0, 0, 0.08);
+}
+
+@media only screen and (max-width: 747px) {
+  nav {
+    padding-bottom: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .left {
+    margin-left: 0 !important;
+  }
+  nav .wrapper {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+  }
+  nav .wrapper .center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+  }
+  nav .wrapper .center ul li {
+    margin: 0 10px;
+  }
+  nav .wrapper .right {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    margin-right: 0 !important;
+  }
+}
+
+nav .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-left: 3rem;
+}
+
+nav .left a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .left a h1 {
+  letter-spacing: 2px;
+}
+
+nav .left a h1:hover {
+  cursor: pointer;
+}
+
+nav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+nav .wrapper .center {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .wrapper .center ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav .wrapper .center ul li {
+  list-style: none;
+}
+
+nav .wrapper .center ul li a {
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  color: black;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+nav .wrapper .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 3rem;
+}
+
+nav .wrapper .right button {
+  border: none;
+  padding: 15px 12px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border-radius: 5%;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .wrapper .right button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .wrapper .right button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+nav .wrapper .right button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+nav .wrapper .right button:hover:before {
+  left: 0;
+}
+
+nav .wrapper .right button:hover:after {
+  right: 0;
+}
+
+nav .wrapper .right span:before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  right: 0%;
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+nav .wrapper .right button:hover span:before {
+  top: 0;
+}
+
+nav .wrapper .right span:after {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+nav .wrapper .right button:hover span:after {
+  bottom: 0;
+}
+/*# sourceMappingURL=Navbar.css.map */
