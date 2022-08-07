@@ -1,0 +1,25 @@
+section#intro {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	min-height: 30vh;
+	align-items: center;
+	ul {
+		display: flex;
+		width: 30%;
+		justify-content: space-around;
+		li {
+			list-style: none;
+
+			a {
+				color: black;
+				font-size: 20px;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
